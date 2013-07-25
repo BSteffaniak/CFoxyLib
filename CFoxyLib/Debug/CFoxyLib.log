@@ -1,0 +1,42 @@
+﻿Build started 7/25/2013 4:18:52 PM.
+     1>Project "C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\CFoxyLib\CFoxyLib.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Braden Steffaniak\glew-1.10.0\include" /I"C:\Users\Braden Steffaniak\SDL2-2.0.0\include" /I"C:\Users\Braden Steffaniak\Documents\Visual Studio 2012\Projects\CFoxyUtil\CFoxyUtil" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Buffer.cpp Bundle.cpp Frame.cpp Component.cpp Panel.cpp GL.cpp Color.cpp FrameListener.cpp FrameEvent.cpp Event.cpp ResourceLocator.cpp Mouse.cpp Intersects.cpp Texture.cpp Time.cpp
+         Time.cpp
+         Texture.cpp
+         Intersects.cpp
+         Mouse.cpp
+         ResourceLocator.cpp
+         Event.cpp
+         FrameEvent.cpp
+         FrameListener.cpp
+         Color.cpp
+         GL.cpp
+         Panel.cpp
+         Component.cpp
+         Frame.cpp
+         Bundle.cpp
+         Buffer.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\Debug\CFoxyLib.lib" SDL2main.lib GLew32.lib /LIBPATH:"C:\Users\Braden Steffaniak\SDL2-2.0.0\lib\x86" /LIBPATH:"C:\Users\Braden Steffaniak\glew-1.10.0\lib\Release\Win32" /NOLOGO Debug\Buffer.obj
+         Debug\Bundle.obj
+         Debug\Frame.obj
+         Debug\Component.obj
+         Debug\Panel.obj
+         Debug\GL.obj
+         Debug\Color.obj
+         Debug\FrameListener.obj
+         Debug\FrameEvent.obj
+         Debug\Event.obj
+         Debug\ResourceLocator.obj
+         Debug\Mouse.obj
+         Debug\Intersects.obj
+         Debug\Texture.obj
+         Debug\Time.obj
+         CFoxyLib.vcxproj -> C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\Debug\CFoxyLib.lib
+     1>Done Building Project "C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\CFoxyLib\CFoxyLib.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.58
