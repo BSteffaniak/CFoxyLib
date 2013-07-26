@@ -11,9 +11,11 @@ using std::cout;
 using std::endl;
 
 #if defined(__APPLE__)
+	#define MACOSX
 	#include <SDL2/SDL.h>
 	#include <GLUT/GLUT.h>
 #elif defined(_WIN32) || defined(_WIN64)
+	#define WINDOWS
 	#include "SDL.h"
 	#include "GL/glew.h"
 #endif

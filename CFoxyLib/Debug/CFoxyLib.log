@@ -1,8 +1,24 @@
-﻿Build started 7/26/2013 10:05:09 AM.
+﻿Build started 7/26/2013 11:50:17 AM.
      1>Project "C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\CFoxyLib\CFoxyLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Braden Steffaniak\glew-1.10.0\include" /I"C:\Users\Braden Steffaniak\SDL2-2.0.0\include" /I"C:\Users\Braden Steffaniak\Documents\Github\CFoxyUtil\CFoxyUtil" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GL.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Braden Steffaniak\glew-1.10.0\include" /I"C:\Users\Braden Steffaniak\SDL2-2.0.0\include" /I"C:\Users\Braden Steffaniak\Documents\Github\CFoxyUtil\CFoxyUtil" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Buffer.cpp Bundle.cpp Color.cpp Component.cpp Event.cpp Frame.cpp FrameEvent.cpp FrameListener.cpp GL.cpp Intersects.cpp Mouse.cpp Panel.cpp Texture.cpp Time.cpp
          GL.cpp
+         Generating Code...
+         Compiling...
+         Time.cpp
+         Texture.cpp
+         Panel.cpp
+         Mouse.cpp
+         Intersects.cpp
+         FrameListener.cpp
+         FrameEvent.cpp
+         Frame.cpp
+         Event.cpp
+         Component.cpp
+         Color.cpp
+         Bundle.cpp
+         Buffer.cpp
+         Generating Code...
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\Debug\CFoxyLib.lib" SDL2main.lib GLew32.lib /LIBPATH:"C:\Users\Braden Steffaniak\SDL2-2.0.0\lib\x86" /LIBPATH:"C:\Users\Braden Steffaniak\glew-1.10.0\lib\Release\Win32" /NOLOGO Debug\Buffer.obj
          Debug\Bundle.obj
@@ -24,4 +40,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.07
+Time Elapsed 00:00:08.79
