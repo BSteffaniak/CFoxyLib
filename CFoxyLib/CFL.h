@@ -8,6 +8,19 @@
 using std::cout;
 using std::endl;
 
+/*
+ Operating System Definition names.
+ 
+ _WIN32
+ _WIN64
+ __unix
+ __unix__
+ __APPLE__
+ __MACH__
+ __linux__
+ __FreeBSD__
+ */
+
 #if defined(__APPLE__)
 	#define MACOSX
 	#include <SDL2/SDL.h>
