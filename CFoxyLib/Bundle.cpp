@@ -56,7 +56,7 @@ Bundle::Bundle(int vertexAmount, int vertexSize, bool textures, bool colors)
 					cols[i] = 1;
 				}
 				
-				colorsBuffer->setData(0, &cols[0], cols.size());
+				colorsBuffer->setData(0, &cols[0], (int)cols.size());
 			}
 			colorsBuffer->endEditing();
 		}
