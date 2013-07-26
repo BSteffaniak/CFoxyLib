@@ -2000,12 +2000,12 @@ void GL::quit()
 {
 	delete color;
 
-	for (int i = floatData.size() - 1; i >= 0; i--)
+	for (int i = (int)floatData.size() - 1; i >= 0; i--)
 	{
 		delete[] floatData[i];
 	}
 
-	for (int i = colorData.size() - 1; i >= 0; i--)
+	for (int i = (int)colorData.size() - 1; i >= 0; i--)
 	{
 		delete colorData[i];
 	}
