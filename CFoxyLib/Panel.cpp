@@ -109,7 +109,7 @@ bool Panel::dispose()
  */
 void Panel::renderComponents()
 {
-	for (int i = children.size() - 1; i >= 0; i--)
+	for (int i = (int)children.size() - 1; i >= 0; i--)
 	{
 		Component* child = children.at(i);
 		
