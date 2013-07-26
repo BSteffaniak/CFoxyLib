@@ -5,7 +5,7 @@
  */
 Event::Event()
 {
-	when = Time::currentTimeMillis();
+	when = FoxyTime::currentTimeMillis();
 }
 
 /**
