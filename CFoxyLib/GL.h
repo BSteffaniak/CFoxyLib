@@ -19,6 +19,9 @@ private:
 
 	static Color*			color;
 
+	static vector<float*>	floatData;
+	static vector<Color*>	colorData;
+
 	static Stack<Color>		colorStack, clearColorStack;
 	static Stack<float*>	amountScaled, amountTranslated, amountRotated, currentLocation;
 
@@ -31,9 +34,6 @@ private:
 	static Color*	genColorData();
 
 public:
-	static vector<float*>	floatData;
-	static vector<Color*>	colorData;
-
 	static Texture			WHITE;
 
 	static const int		POINTS, LINES, TRIANGLES;

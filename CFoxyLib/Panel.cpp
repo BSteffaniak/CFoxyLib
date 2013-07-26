@@ -12,6 +12,16 @@ Panel::Panel(Panel* parent) : Component(parent)
 }
 
 /**
+ * Destruct the Panel and free the memory with it.
+ */
+Panel::~Panel()
+{
+	delete backgroundColor;
+
+	backgroundColor = NULL;
+}
+
+/**
  * Get whether or not the size of the Panel is independent to
  * the scale that the OpenGL matrix has at the rendering time.
  * 

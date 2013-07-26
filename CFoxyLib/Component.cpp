@@ -48,6 +48,13 @@ Component::Component(Panel* parent)
 	setAlignment(defaultHorizontalAlignment, defaultVerticalAlignment);
 }
 
+Component::~Component()
+{
+	delete parent;
+
+	parent = NULL;
+}
+
 /**
  * Initialize the Component class stuff.
  */

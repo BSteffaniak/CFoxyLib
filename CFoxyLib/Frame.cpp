@@ -577,7 +577,37 @@ bool Frame::removeFrameListener(FrameListener* listener)
 	return true;
 }
 
+/**
+ * Get the SDL_Window instance of the Frame.
+ * 
+ * @return The SDL_Window instance of the Frame.
+ */
 SDL_Window* Frame::getWindow()
 {
 	return window;
+}
+
+/**
+ * Quit the Frame and free the memory with it.
+ */
+void Frame::quit()
+{
+	if (window != NULL)
+	{
+		SDL_DestroyWindow(window);
+	}
+
+	delete panel;
+
+	panel  = NULL;
+
+	for (int i = components.size() - 1; i >= 0; i--)
+	{
+		delete components.get(i);
+	}
+
+	for (int i = frameListeners.size() - 1; i >= 0; i--)
+	{
+		delete frameListeners.get(i);
+	}
 }

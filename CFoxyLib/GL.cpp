@@ -2006,12 +2006,7 @@ void GL::quit()
 
 	SDL_GL_DeleteContext(context);
 
-	SDL_Window* window = Frame::getWindow();
-
-	if (window != NULL)
-	{
-		SDL_DestroyWindow(window);
-	}
+	Frame::quit();
 
 	SDL_Quit();
 }

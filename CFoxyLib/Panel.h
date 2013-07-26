@@ -21,6 +21,7 @@ private:
 
 public:
 	Panel(Panel*);
+	~Panel();
 
 	void	setIndependentSize(bool);
 	void	setBackgroundColor(Color*);

@@ -15,8 +15,6 @@ private:
 
 	vector<byte>	pixels;
 
-	float*			offsets;
-
 	static int		currentId;
 
 	void		genTexDimensions();
@@ -26,6 +24,7 @@ private:
 public:
 	Texture();
 	Texture(string);
+	~Texture();
 
 	void		loadTexture(byte*, int, int);
 	void		loadTexture();

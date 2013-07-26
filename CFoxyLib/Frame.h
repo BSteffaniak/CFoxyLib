@@ -46,6 +46,7 @@ public:
 	static void			setTargetFPS(int);
 	static void			setTitle(string);
 	static void			setLocation(int, int);
+	static void			quit();
 
 	static bool			wasCreated();
 	static bool			add(Component*);

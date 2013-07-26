@@ -24,6 +24,14 @@ Texture::Texture(string location)
 }
 
 /**
+ * Destruct the Texture and all the memory too.
+ */
+Texture::~Texture()
+{
+
+}
+
+/**
  * Get the ID number that OpenGL assigned the Texture.
  * 
  * @return The ID number of the Texture.

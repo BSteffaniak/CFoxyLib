@@ -39,6 +39,7 @@ private:
 
 public:
 	Component(Panel*);
+	~Component();
 
 	static const int	LEFT = 0, CENTER = 1, RIGHT = 2,
 						BOTTOM = 0, TOP = 2;
