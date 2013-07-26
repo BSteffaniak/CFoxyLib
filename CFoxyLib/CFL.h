@@ -3,8 +3,6 @@
 
 #define byte unsigned char
 
-//#define GL_GLEXT_PROTOTYPES
-
 #include <iostream>
 
 using std::cout;
@@ -16,6 +14,9 @@ using std::endl;
 	#include <GLUT/GLUT.h>
 #elif defined(_WIN32) || defined(_WIN64)
 	#define WINDOWS
+	#if defined(_WIN32)
+		#include <windows.h>
+	#endif
 	#include "SDL.h"
 	#include "GL/glew.h"
 #endif
@@ -36,7 +37,7 @@ using std::endl;
 #include "FrameListener.h"
 #include "MouseListener.h"
 #include "Mouse.h"
-#include "Time.h"
+#include "FoxyTime.h"
 #include "ResourceLocator.h"
 #include "Intersects.h"
 
