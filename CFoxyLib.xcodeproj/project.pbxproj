@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C48D2C2017A2EF3F0016D16D /* FoxyTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C48D2C1F17A2EF3F0016D16D /* FoxyTime.cpp */; };
 		C4A73E8717A2D92600952402 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A73E8617A2D92600952402 /* Cocoa.framework */; };
 		C4A73E8917A2D93A00952402 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A73E8817A2D93A00952402 /* SDL2.framework */; };
 		C4A73E8B17A2D99800952402 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A73E8A17A2D99800952402 /* GLUT.framework */; };
 		C4A73E8D17A2D9FB00952402 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4A73E8C17A2D9FB00952402 /* OpenGL.framework */; };
-		C4CECF1117A23AD5008FE768 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4CECF1017A23AD5008FE768 /* main.cpp */; };
 		C4CECF1317A23AD5008FE768 /* CFoxyLib.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C4CECF1217A23AD5008FE768 /* CFoxyLib.1 */; };
 		C4E7BAB117A23B7900341015 /* Color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BAAD17A23B7900341015 /* Color.cpp */; };
 		C4E7BAB217A23B7900341015 /* Component.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BAAF17A23B7900341015 /* Component.cpp */; };
@@ -27,7 +27,6 @@
 		C4E7BAD917A23BA400341015 /* Panel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BAC817A23BA400341015 /* Panel.cpp */; };
 		C4E7BADA17A23BA400341015 /* ResourceLocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BACA17A23BA400341015 /* ResourceLocator.cpp */; };
 		C4E7BADB17A23BA400341015 /* Texture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BACC17A23BA400341015 /* Texture.cpp */; };
-		C4E7BADC17A23BA400341015 /* Time.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C4E7BACE17A23BA400341015 /* Time.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,12 +43,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C48D2C1E17A2EF010016D16D /* FoxyTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoxyTime.h; sourceTree = "<group>"; };
+		C48D2C1F17A2EF3F0016D16D /* FoxyTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FoxyTime.cpp; sourceTree = "<group>"; };
 		C4A73E8617A2D92600952402 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C4A73E8817A2D93A00952402 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		C4A73E8A17A2D99800952402 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		C4A73E8C17A2D9FB00952402 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		C4CECF0D17A23AD5008FE768 /* CFoxyLib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CFoxyLib; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4CECF1017A23AD5008FE768 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C4CECF1217A23AD5008FE768 /* CFoxyLib.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CFoxyLib.1; sourceTree = "<group>"; };
 		C4E7BAAD17A23B7900341015 /* Color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Color.cpp; sourceTree = "<group>"; };
 		C4E7BAAE17A23B7900341015 /* Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
@@ -82,8 +82,6 @@
 		C4E7BACB17A23BA400341015 /* ResourceLocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceLocator.h; sourceTree = "<group>"; };
 		C4E7BACC17A23BA400341015 /* Texture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Texture.cpp; sourceTree = "<group>"; };
 		C4E7BACD17A23BA400341015 /* Texture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Texture.h; sourceTree = "<group>"; };
-		C4E7BACE17A23BA400341015 /* Time.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Time.cpp; sourceTree = "<group>"; };
-		C4E7BACF17A23BA400341015 /* Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Time.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,14 +149,13 @@
 				C4E7BACB17A23BA400341015 /* ResourceLocator.h */,
 				C4E7BACC17A23BA400341015 /* Texture.cpp */,
 				C4E7BACD17A23BA400341015 /* Texture.h */,
-				C4E7BACE17A23BA400341015 /* Time.cpp */,
-				C4E7BACF17A23BA400341015 /* Time.h */,
 				C4E7BAAD17A23B7900341015 /* Color.cpp */,
 				C4E7BAAE17A23B7900341015 /* Color.h */,
 				C4E7BAAF17A23B7900341015 /* Component.cpp */,
 				C4E7BAB017A23B7900341015 /* Component.h */,
-				C4CECF1017A23AD5008FE768 /* main.cpp */,
 				C4CECF1217A23AD5008FE768 /* CFoxyLib.1 */,
+				C48D2C1E17A2EF010016D16D /* FoxyTime.h */,
+				C48D2C1F17A2EF3F0016D16D /* FoxyTime.cpp */,
 			);
 			path = CFoxyLib;
 			sourceTree = "<group>";
@@ -214,7 +211,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C4CECF1117A23AD5008FE768 /* main.cpp in Sources */,
 				C4E7BAB117A23B7900341015 /* Color.cpp in Sources */,
 				C4E7BAB217A23B7900341015 /* Component.cpp in Sources */,
 				C4E7BAD017A23BA400341015 /* Buffer.cpp in Sources */,
@@ -229,7 +225,7 @@
 				C4E7BAD917A23BA400341015 /* Panel.cpp in Sources */,
 				C4E7BADA17A23BA400341015 /* ResourceLocator.cpp in Sources */,
 				C4E7BADB17A23BA400341015 /* Texture.cpp in Sources */,
-				C4E7BADC17A23BA400341015 /* Time.cpp in Sources */,
+				C48D2C2017A2EF3F0016D16D /* FoxyTime.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,18 +294,31 @@
 		C4CECF1717A23AD5008FE768 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				HEADER_SEARCH_PATHS = /Users/BradenSteffaniak/GitHub/CFoxyUtil/CFoxyUtil;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = YES;
+				PRIVATE_HEADERS_FOLDER_PATH = usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = usr/local/include;
 			};
 			name = Debug;
 		};
 		C4CECF1817A23AD5008FE768 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EXECUTABLE_EXTENSION = dylib;
+				EXECUTABLE_PREFIX = "";
 				FRAMEWORK_SEARCH_PATHS = /Library/Frameworks;
 				HEADER_SEARCH_PATHS = /Users/BradenSteffaniak/GitHub/CFoxyUtil/CFoxyUtil;
+				LD_DYLIB_INSTALL_NAME = "$(DYLIB_INSTALL_NAME_BASE:standardizepath)/$(EXECUTABLE_PATH)";
+				MACH_O_TYPE = mh_dylib;
+				PRIVATE_HEADERS_FOLDER_PATH = usr/local/include;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = usr/local/include;
 			};
 			name = Release;
 		};
