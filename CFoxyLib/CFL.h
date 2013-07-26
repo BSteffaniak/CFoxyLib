@@ -10,8 +10,9 @@
 using std::cout;
 using std::endl;
 
-#include "SDL.h"
-#include "GL/glew.h"
+#include <SDL2/SDL.h>
+//#include "GL/glew.h"
+#include <GLUT/GLUT.h>
 #include "Texture.h"
 #include "Buffer.h"
 #include "Bundle.h"

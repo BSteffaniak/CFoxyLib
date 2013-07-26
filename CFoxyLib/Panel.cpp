@@ -8,7 +8,7 @@
  */
 Panel::Panel(Panel* parent) : Component(parent)
 {
-
+	backgroundColor = nullptr;
 }
 
 /**

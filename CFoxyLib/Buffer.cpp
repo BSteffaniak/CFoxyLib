@@ -7,7 +7,7 @@ GLuint	Buffer::currentId;
  */
 Buffer::Buffer()
 {
-
+	
 }
 
 /**
@@ -20,7 +20,8 @@ Buffer::Buffer(int size)
 {
 	this->size = size;
 	
-	buffer = new float[size];
+	buffer     = new float[size];
+	mapBuffer  = nullptr;
 
 	glGenBuffers(1, &id);
 	glBindBuffer(GL_ARRAY_BUFFER, id);

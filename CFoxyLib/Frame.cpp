@@ -327,7 +327,7 @@ void Frame::update()
 		{
 			FrameListener* listener = frameListeners.get(i);
 			
-			FrameEvent* event = &FrameEvent();
+			FrameEvent* event = new FrameEvent();
 			
 			listener->frameResized(event);
 		}
