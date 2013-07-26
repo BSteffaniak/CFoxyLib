@@ -153,7 +153,7 @@ void Component::setFocused(bool focused)
 {
 	if (focused)
 	{
-		for (int i = components.size() - 1; i >= 0; i--)
+		for (int i = (int)components.size() - 1; i >= 0; i--)
 		{
 			Component* c = components.at(i);
 			
