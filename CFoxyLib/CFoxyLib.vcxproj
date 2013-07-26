@@ -13,6 +13,7 @@
   <ItemGroup>
     <ClCompile Include="Buffer.cpp" />
     <ClCompile Include="Bundle.cpp" />
+    <ClCompile Include="FoxyTime.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="Panel.cpp" />
@@ -25,10 +26,10 @@
     <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="Intersects.cpp" />
     <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="Time.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Component.h" />
+    <ClInclude Include="FoxyTime.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="CFL.h" />
     <ClInclude Include="GL.h" />
@@ -44,7 +45,6 @@
     <ClInclude Include="MouseListener.h" />
     <ClInclude Include="ResourceLocator.h" />
     <ClInclude Include="Texture.h" />
-    <ClInclude Include="Time.h" />
     <ClInclude Include="Panel.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

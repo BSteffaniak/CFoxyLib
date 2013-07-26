@@ -27,9 +27,9 @@ using std::endl;
 	#include <GLUT/GLUT.h>
 #elif defined(_WIN32) || defined(_WIN64)
 	#define WINDOWS
-	#if defined(_WIN32)
-		#include <windows.h>
-	#endif
+	//#if defined(_WIN32)
+	//	#include <windows.h>
+	//#endif
 	#include "SDL.h"
 	#include "GL/glew.h"
 #endif
