@@ -10,8 +10,14 @@
 using std::cout;
 using std::endl;
 
-#include "SDL.h"
-#include "GL/glew.h"
+#if defined(__APPLE__)
+	#include <SDL2/SDL.h>
+	#include <GLUT/GLUT.h>
+#elif defined(_WIN32) || defined(_WIN64)
+	#include "SDL.h"
+	#include "GL/glew.h"
+#endif
+
 #include "Texture.h"
 #include "Buffer.h"
 #include "Bundle.h"

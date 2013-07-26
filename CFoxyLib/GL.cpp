@@ -53,7 +53,8 @@ void GL::init()
 		createContext(window);
 	}
 
-	glewInit();
+	//glewInit();
+	//glutInit(<#int *argcp#>, <#char **argv#>)
 
 	//BufferedImage image = new BufferedImage(1, 1, BufferedImage.BITMASK);
 	
