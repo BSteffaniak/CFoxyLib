@@ -1,25 +1,8 @@
-﻿Build started 7/25/2013 7:59:02 PM.
+﻿Build started 7/26/2013 10:05:09 AM.
      1>Project "C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\CFoxyLib\CFoxyLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Braden Steffaniak\glew-1.10.0\include" /I"C:\Users\Braden Steffaniak\SDL2-2.0.0\include" /I"C:\Users\Braden Steffaniak\Documents\Github\CFoxyUtil\CFoxyUtil" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Buffer.cpp Bundle.cpp Color.cpp Component.cpp Event.cpp Frame.cpp FrameEvent.cpp FrameListener.cpp GL.cpp Intersects.cpp Mouse.cpp Panel.cpp Texture.cpp Time.cpp
-         Texture.cpp
-         Panel.cpp
-         Generating Code...
-         Compiling...
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Braden Steffaniak\glew-1.10.0\include" /I"C:\Users\Braden Steffaniak\SDL2-2.0.0\include" /I"C:\Users\Braden Steffaniak\Documents\Github\CFoxyUtil\CFoxyUtil" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt GL.cpp
          GL.cpp
-         Frame.cpp
-         Component.cpp
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         Time.cpp
-         Mouse.cpp
-         Intersects.cpp
-         FrameListener.cpp
-         FrameEvent.cpp
-         Event.cpp
-         Color.cpp
-         Bundle.cpp
-         Buffer.cpp
        Lib:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\Debug\CFoxyLib.lib" SDL2main.lib GLew32.lib /LIBPATH:"C:\Users\Braden Steffaniak\SDL2-2.0.0\lib\x86" /LIBPATH:"C:\Users\Braden Steffaniak\glew-1.10.0\lib\Release\Win32" /NOLOGO Debug\Buffer.obj
          Debug\Bundle.obj
@@ -41,4 +24,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.62
+Time Elapsed 00:00:04.07

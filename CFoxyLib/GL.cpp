@@ -2002,7 +2002,12 @@ void GL::quit()
 		delete[] floatData[i];
 	}
 
-	color     = NULL;
+	for (int i = colorData.size() - 1; i >= 0; i--)
+	{
+		delete colorData[i];
+	}
+
+	color = NULL;
 
 	SDL_GL_DeleteContext(context);
 
