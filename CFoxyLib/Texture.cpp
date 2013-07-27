@@ -59,8 +59,6 @@ void Texture::loadTexture(byte* data, int width, int height)
 	this->width  = width;
 	this->height = height;
 
-	int   length = width * height * 4;
-
 	pixels = data;
 
 	//pixels = new byte[length];
