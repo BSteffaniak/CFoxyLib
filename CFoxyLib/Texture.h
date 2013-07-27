@@ -10,16 +10,17 @@ using std::vector;
 class Texture
 {
 private:
-	int				id;
 	int				width, height;
 
-	vector<byte>	pixels;
+	GLuint			id;
+
+	byte*	pixels;
 
 	static int		currentId;
 
-	void		genTexDimensions();
+	void			genTexDimensions();
 
-	static void	bind(int);
+	static void		bind(int);
 
 public:
 	Texture();

@@ -58,6 +58,9 @@ SDL_Window* Frame::create(int width, int height)
 		throw invalid_argument("The width and height of the Frame must both be > 0");
 	}
 
+	Frame::width  = width;
+	Frame::height = height;
+
 	init();
 	
 	//ResourceLocator::locateNatives();

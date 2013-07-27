@@ -24,6 +24,10 @@ Bundle::Bundle()
  */
 Bundle::Bundle(int vertexAmount, int vertexSize, bool textures, bool colors)
 {
+	verticesId = 0;
+	texturesId = 0;
+	colorsId   = 0;
+
 	vertsPosition    = 0;
 	texturesPosition = 0;
 	colorsPosition   = 0;
@@ -74,7 +78,7 @@ Bundle::Bundle(int vertexAmount, int vertexSize, bool textures, bool colors)
  * @param colorsBuffer The Colors Buffer to create the Bundle with.
  * @param vertexSize The size of the vertices in the Vertex Buffer.
  */
-Bundle::Bundle(Buffer* verticesBuffer, Buffer* texturesBuffer, Buffer* colorsBuffer, int vertexSize)
+Bundle::Bundle(Buffer *verticesBuffer, Buffer *texturesBuffer, Buffer *colorsBuffer, int vertexSize)
 {
 	vertsPosition    = 0;
 	texturesPosition = 0;
@@ -205,7 +209,7 @@ Buffer* Bundle::getVerticesBuffer()
  * @param buffer The Vertices Buffer instance that this Bundle will
  * 		use.
  */
-void Bundle::setVerticesBuffer(Buffer* buffer)
+void Bundle::setVerticesBuffer(Buffer *buffer)
 {
 	this->verticesBuffer = buffer;
 }
@@ -216,7 +220,7 @@ void Bundle::setVerticesBuffer(Buffer* buffer)
  * @param offset The offset in the Vertices Buffer.
  * @param verts The new float array to set the data at the offset to.
  */
-void Bundle::setVertices(int offset, float* verts, int length)
+void Bundle::setVertices(int offset, float *verts, int length)
 {
 	verticesBuffer->setData(offset, verts, length);
 	
@@ -233,13 +237,13 @@ void Bundle::setVertices(int offset, float* verts, int length)
  * 
  * @param verts The float array to append.
  */
-void Bundle::addVertices(float* verts, int length)
+void Bundle::addVertices(float *verts, int length)
 {
 	setVertices(vertsPosition, verts, length);
 	
 	vertsPosition += length;
 	
-//		return id;
+//	return id;
 }
 
 //	void Bundle::translate(int offset, int numVertices, float dx, float dy, float dz)
@@ -263,7 +267,7 @@ Buffer* Bundle::getTexturesBuffer()
  * @param buffer The Textures Buffer instance that this Bundle will
  * 		use.
  */
-void Bundle::setTexturesBuffer(Buffer* buffer)
+void Bundle::setTexturesBuffer(Buffer *buffer)
 {
 	this->texturesBuffer = buffer;
 }
@@ -275,7 +279,7 @@ void Bundle::setTexturesBuffer(Buffer* buffer)
  * @param textures The new float array to set the data at the offset
  * 		to.
  */
-void Bundle::setTextures(int offset, float* textures, int length)
+void Bundle::setTextures(int offset, float *textures, int length)
 {
 	texturesBuffer->setData(offset, textures, length);
 	
@@ -292,7 +296,7 @@ void Bundle::setTextures(int offset, float* textures, int length)
  * 
  * @param verts The float array to append.
  */
-void Bundle::addTextures(float* textures, int length)
+void Bundle::addTextures(float *textures, int length)
 {
 	setTextures(texturesPosition, textures, length);
 	
@@ -317,7 +321,7 @@ Buffer* Bundle::getColorsBuffer()
  * @param buffer The Colors Buffer instance that this Bundle will
  * 		use.
  */
-void Bundle::setColorsBuffer(Buffer* buffer)
+void Bundle::setColorsBuffer(Buffer *buffer)
 {
 	this->colorsBuffer = buffer;
 }
@@ -329,7 +333,7 @@ void Bundle::setColorsBuffer(Buffer* buffer)
  * @param colors The new float array to set the data at the offset
  * 		to.
  */
-void Bundle::setColors(int offset, float* colors, int length)
+void Bundle::setColors(int offset, float *colors, int length)
 {
 	colorsBuffer->setData(offset, colors, length);
 	
@@ -346,7 +350,7 @@ void Bundle::setColors(int offset, float* colors, int length)
  * 
  * @param verts The float array to append.
  */
-void Bundle::addColors(float* colors, int length)
+void Bundle::addColors(float *colors, int length)
 {
 	setColors(colorsPosition, colors, length);
 	
@@ -411,7 +415,7 @@ void Bundle::endEditingColors()
  * @param texture The Texture instance that is wrapped on the
  * 		polygons.
  */
-void Bundle::render(int shape, Texture* texture)
+void Bundle::render(int shape, Texture *texture)
 {
 	render(shape, 0, vertexAmount, texture);
 }
@@ -429,7 +433,7 @@ void Bundle::render(int shape, Texture* texture)
  * @param texture The Texture to wrap all of the polygons within
  * 		the portion of the Bundle with.
  */
-void Bundle::render(int shape, int start, int amount, Texture* texture)
+void Bundle::render(int shape, int start, int amount, Texture *texture)
 {
 	if (texture != NULL)
 	{
@@ -441,12 +445,13 @@ void Bundle::render(int shape, int start, int amount, Texture* texture)
 	beginColorsDraw();
 
 	glDrawArrays(shape, start, amount);
+	//glDrawElements(shape, amount, GL_UNSIGNED_BYTE, 0);
 	
 	endColorsDraw();
 	endTexturesDraw();
 	endVerticesDraw();
 	
-//		Texture.unbind();
+//	Texture.unbind();
 }
 
 /**
@@ -457,10 +462,11 @@ void Bundle::beginVerticesDraw()
 	glEnableClientState(GL_VERTEX_ARRAY);
 	
 	glBindBuffer(GL_ARRAY_BUFFER, verticesId);
-
-	glVertexPointer(vertexSize, GL_FLOAT, 0, 0);
 	
-//		glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vertexIndicesId);
+	glVertexPointer(vertexSize, GL_FLOAT, 0, 0);
+	//glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 0, &verticesBuffer->getBuffer()[0]);
+	
+//	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, vertexIndicesId);
 }
 
 /**
@@ -468,11 +474,11 @@ void Bundle::beginVerticesDraw()
  */
 void Bundle::endVerticesDraw()
 {
-	glDisableVertexAttribArray(0);
-	
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	//glDisableVertexAttribArray(0);
 	
 	glDisableClientState(GL_VERTEX_ARRAY);
+	
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
 }
 
 /**
@@ -480,11 +486,11 @@ void Bundle::endVerticesDraw()
  */
 void Bundle::beginTexturesDraw()
 {
-	GL::setTextureWrapSMethod(GL::getTextureWrapSMethod());
-	GL::setTextureWrapTMethod(GL::getTextureWrapTMethod());
-	
-	GL::setTextureScaleMinMethod(GL::getTextureScaleMinMethod());
-	GL::setTextureScaleMagMethod(GL::getTextureScaleMagMethod());
+	//GL::setTextureWrapSMethod(GL::getTextureWrapSMethod());
+	//GL::setTextureWrapTMethod(GL::getTextureWrapTMethod());
+	//
+	//GL::setTextureScaleMinMethod(GL::getTextureScaleMinMethod());
+	//GL::setTextureScaleMagMethod(GL::getTextureScaleMagMethod());
 	
 	glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 	
@@ -498,15 +504,15 @@ void Bundle::beginTexturesDraw()
  */
 void Bundle::endTexturesDraw()
 {
+	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
+
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	
-	glDisableClientState(GL_TEXTURE_COORD_ARRAY);
-	
-	GL::setTextureScaleMinMethod(GL::getTextureScaleMinMethod());
-	GL::setTextureScaleMagMethod(GL::getTextureScaleMagMethod());
-	
-	GL::setTextureWrapSMethod(GL::getTextureWrapSMethod());
-	GL::setTextureWrapTMethod(GL::getTextureWrapTMethod());
+	//GL::setTextureScaleMinMethod(GL::getTextureScaleMinMethod());
+	//GL::setTextureScaleMagMethod(GL::getTextureScaleMagMethod());
+	//
+	//GL::setTextureWrapSMethod(GL::getTextureWrapSMethod());
+	//GL::setTextureWrapTMethod(GL::getTextureWrapTMethod());
 }
 
 /**

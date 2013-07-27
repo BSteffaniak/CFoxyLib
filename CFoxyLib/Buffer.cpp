@@ -7,7 +7,7 @@ GLuint	Buffer::currentId;
  */
 Buffer::Buffer()
 {
-	
+	buffer = nullptr;
 }
 
 /**
@@ -20,12 +20,12 @@ Buffer::Buffer(int size)
 {
 	this->size = size;
 	
-	buffer     = new float[size];
-	mapBuffer  = nullptr;
+	buffer     = new float[size];//new vector<float>(size);
+	//mapBuffer  = nullptr;
 
 	glGenBuffers(1, &id);
-	glBindBuffer(GL_ARRAY_BUFFER, id);
-	glBufferData(GL_ARRAY_BUFFER, size * 4, buffer, GL_DYNAMIC_DRAW);
+	bind();
+	glBufferData(GL_ARRAY_BUFFER, size * sizeof(float), buffer, GL_STREAM_DRAW);
 }
 
 /**
@@ -33,11 +33,13 @@ Buffer::Buffer(int size)
  */
 Buffer::~Buffer()
 {
-	delete[] buffer;
-	delete[] mapBuffer;
+	glDeleteBuffers(1, &id);
 
-	buffer    = NULL;
-	mapBuffer = NULL;
+	//delete[] buffer;
+	//delete[] mapBuffer;
+
+	//buffer    = NULL;
+	//mapBuffer = NULL;
 }
 
 /**
@@ -103,7 +105,9 @@ float Buffer::getData(int index)
  */
 void Buffer::setData(int index, float data)
 {
-	buffer[index] = data;
+	//buffer[index] = data;
+
+	setData(index, &data, 1);
 }
 
 /**
@@ -116,6 +120,8 @@ void Buffer::setData(int index, float data)
  */
 void Buffer::setData(int index, float* data, int length)
 {
+	//glBufferSubData(GL_ARRAY_BUFFER, index * sizeof(data), length * sizeof(data), data);
+	
 	for (int i = 0; i < length; i++)
 	{
 		buffer[index + i] = data[i];
@@ -166,7 +172,7 @@ void Buffer::beginEditing()
 //		System.out.println(currentlyBound + ", " + id);
 	
 	//mapBuffer = (byte*)glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
-	
+
 	buffer = (float*)glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);//mapBuffer.order(ByteOrder.nativeOrder()).asFloatBuffer();
 }
 

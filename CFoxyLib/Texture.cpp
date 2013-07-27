@@ -7,7 +7,7 @@ int	Texture::currentId;
  */
 Texture::Texture()
 {
-
+	//pixels = nullptr;
 }
 
 /**
@@ -28,7 +28,11 @@ Texture::Texture(string location)
  */
 Texture::~Texture()
 {
+	//delete[] pixels;
 
+	//pixels = NULL;
+
+	glDeleteTextures(1, &id);
 }
 
 /**
@@ -50,50 +54,60 @@ int Texture::getId()
  */
 void Texture::loadTexture(byte* data, int width, int height)
 {
+	glGenTextures(1, &id);
+
 	this->width  = width;
 	this->height = height;
 
-	pixels = *(new vector<byte>(width * height * 4));
+	int   length = width * height * 4;
 
-	for (unsigned int i = 0; i < pixels.size(); i++)
-	{
-		pixels[i] = data[i];
-	}
+	pixels = data;
+
+	//pixels = new byte[length];
+
+	//for (unsigned int i = 0; i < length; i++)
+	//{
+	//	pixels[i] = data[i];
+	//}
+
+	//pixels.resize(length);
+
+	//pixels.insert(pixels.begin(), data, data + length);
 
     bind();
     
-    // Flip the data vertically.
-    for (int y = 0; y < height / 2; y++)
-    {
-        for (int x = 0; x < width; x++)
-        {
-        	int offset  = (x + y * width) * 4;
-        	int offset2 = (x + (height - y - 1) * width) * 4;
-        	
-        	for (int i = 0; i < 4; i++)
-        	{
-                byte temp = pixels[offset + i];
-                pixels[offset + i]  = pixels[offset2 + i];
-                pixels[offset2 + i] = temp;
-        	}
-        }
-    }
+    //// Flip the data vertically.
+    //for (int y = 0; y < height / 2; y++)
+    //{
+    //    for (int x = 0; x < width; x++)
+    //    {
+    //    	int offset  = (x + y * width) * 4;
+    //    	int offset2 = (x + (height - y - 1) * width) * 4;
+    //    	
+    //    	for (int i = 0; i < 4; i++)
+    //    	{
+    //            byte temp = pixels[offset + i];
+    //            pixels[offset + i]  = pixels[offset2 + i];
+    //            pixels[offset2 + i] = temp;
+    //    	}
+    //    }
+    //}
     
-    // Put the data in the right order (From ABGR to RGBA (Reverse it)).
-    for (int y = 0; y < height; y++)
-    {
-    	for (int x = 0; x < width; x++)
-    	{
-        	int offset  = (x + y * width) * 4;
-        	
-    		for (int i = 0; i < 2; i++)
-        	{
-                byte temp = pixels[offset + i];
-                pixels[offset + i] = pixels[offset + 4 - i - 1];
-                pixels[offset + 4 - i - 1] = temp;
-        	}
-    	}
-    }
+    //// Put the data in the right order (From ABGR to RGBA (Reverse it)).
+    //for (int y = 0; y < height; y++)
+    //{
+    //	for (int x = 0; x < width; x++)
+    //	{
+    //    	int offset  = (x + y * width) * 4;
+    //    	
+    //		for (int i = 0; i < 2; i++)
+    //    	{
+    //            byte temp = pixels[offset + i];
+    //            pixels[offset + i] = pixels[offset + 4 - i - 1];
+    //            pixels[offset + 4 - i - 1] = temp;
+    //    	}
+    //	}
+    //}
     
     loadTexture();
 }
@@ -106,7 +120,9 @@ void Texture::loadTexture()
 {
 	bind();
 
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, &pixels[0]);
+	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, pixels);
 }
 
 //	/**

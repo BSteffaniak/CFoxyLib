@@ -114,16 +114,16 @@ void GL::initGLStates()
 	setTextureWrapTMethod(GL::REPEAT);
 	
 	setTextureTolerance(0.0001f);
-//		setVertexTolerance(0.001f);
+//	setVertexTolerance(0.001f);
 	
 	glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);//GL_DECAL);
 	
 	glEnable(GL_BLEND);
-//		glBlendFunc(GL_ONE, GL_ONE);
+//	glBlendFunc(GL_ONE, GL_ONE);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-//		glBlendFunc(GL_SRC_COLOR, GL_ONE_MINUS_CONSTANT_COLOR);
-//		glDisable(GL_BLEND);
-//		glDepthMask(true);
+//	glBlendFunc(GL_SRC_COLOR, GL_ONE_MINUS_CONSTANT_COLOR);
+//	glDisable(GL_BLEND);
+//	glDepthMask(true);
 	
 	float scaled[] = { 1, 1, 1 };
 
@@ -2003,11 +2003,15 @@ void GL::quit()
 	for (int i = (int)floatData.size() - 1; i >= 0; i--)
 	{
 		delete[] floatData[i];
+
+		floatData[i] = NULL;
 	}
 
 	for (int i = (int)colorData.size() - 1; i >= 0; i--)
 	{
 		delete colorData[i];
+
+		colorData[i] = NULL;
 	}
 
 	color = NULL;

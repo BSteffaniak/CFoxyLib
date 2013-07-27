@@ -11,8 +11,8 @@ private:
 
 	GLuint			id;
 
-	float			*buffer;
-	byte			*mapBuffer;
+	float*			buffer;
+	//byte*			mapBuffer;
 
 	Buffer();
 
