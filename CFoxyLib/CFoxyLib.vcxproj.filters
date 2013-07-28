@@ -13,108 +13,222 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\net">
+      <UniqueIdentifier>{ee1638fa-b5ac-4631-8963-71ae326c6baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog">
+      <UniqueIdentifier>{8d2fbea5-503c-4c83-b14c-788bf1526bd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib">
+      <UniqueIdentifier>{c5354dd4-cfa0-43bf-954e-0f3de2112a8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\components">
+      <UniqueIdentifier>{a66c4fee-e0fa-4b51-8a96-f62038bf3679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\web">
+      <UniqueIdentifier>{6c54f47a-af7d-40bf-8b7c-50094a3b4521}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\events">
+      <UniqueIdentifier>{7a9ace61-4650-4552-8364-04cb2850d520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\font">
+      <UniqueIdentifier>{d75fc286-d9b2-4474-9dd3-462b912b9aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\input">
+      <UniqueIdentifier>{88736227-1fc5-4929-833f-4a0182d1f70e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\network">
+      <UniqueIdentifier>{4f5c65bb-2fd2-46b1-acab-607fe8d7e996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\openal">
+      <UniqueIdentifier>{82b33a31-1caf-405a-86b0-1832e3ae0ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\opengl">
+      <UniqueIdentifier>{352273ab-ebd4-43f8-8cf1-fa52dc8bbd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\util">
+      <UniqueIdentifier>{a08d83a4-63d1-46c0-b9f8-700945ccc637}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\opengl\texture">
+      <UniqueIdentifier>{dbea1ed3-9f48-4fc8-a8ee-8c7453f890b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\opengl\bundle">
+      <UniqueIdentifier>{7f2b831b-54d8-45f2-8e66-744f38973d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\opengl\lighting">
+      <UniqueIdentifier>{11f6dc9f-14db-4824-9885-b1e263b2de6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\net\foxycorndog\cfoxylib\opengl\shader">
+      <UniqueIdentifier>{49ee730f-a24a-4da1-968a-cbe88b62dfe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net">
+      <UniqueIdentifier>{624d21b7-f47a-4cc1-a615-e4d31feb7a6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog">
+      <UniqueIdentifier>{0235ecc9-9243-422d-b1bd-f75e9b26f3d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib">
+      <UniqueIdentifier>{7c2f59e9-95f2-44e4-9202-218345409139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\components">
+      <UniqueIdentifier>{6bf1db93-50cc-4f55-9888-83aa92a2038c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\events">
+      <UniqueIdentifier>{b21faffa-083a-4c50-b041-732497724307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\font">
+      <UniqueIdentifier>{dba7788a-91c8-4648-89bc-72993080c964}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\input">
+      <UniqueIdentifier>{f8f701ef-e0d1-4c6b-8f80-453bfd95be95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\network">
+      <UniqueIdentifier>{d2a7f77f-9a7e-4171-9106-58c872406501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\opengl">
+      <UniqueIdentifier>{1a653df8-e769-4af9-98dd-54fbb256a70e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\opengl\bundle">
+      <UniqueIdentifier>{1ad305f1-a388-4d19-bbdd-6daab1bc8185}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\opengl\lighting">
+      <UniqueIdentifier>{1b2c201b-3168-40db-a946-2e894b648b78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\opengl\shader">
+      <UniqueIdentifier>{f88a43b7-89ba-45d0-ba97-fe6a30eb2e9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\openal">
+      <UniqueIdentifier>{b584df99-0208-403a-8401-793d7540a482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\web">
+      <UniqueIdentifier>{cdf653e0-6eb2-4b8d-a496-98e0663bc01b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\util">
+      <UniqueIdentifier>{398e5f08-6b2a-4f9c-b753-ae9e6708f8d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\net\foxycorndog\cfoxylib\opengl\texture">
+      <UniqueIdentifier>{2a76beef-8417-41ae-85a1-cc0835d6a207}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Frame.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\Color.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib</Filter>
     </ClCompile>
-    <ClCompile Include="Component.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\Frame.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib</Filter>
     </ClCompile>
-    <ClCompile Include="Panel.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\components\Component.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\components</Filter>
     </ClCompile>
-    <ClCompile Include="GL.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\components\Panel.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\components</Filter>
     </ClCompile>
-    <ClCompile Include="Color.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\events\Event.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClCompile>
-    <ClCompile Include="FrameListener.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\events\FrameEvent.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClCompile>
-    <ClCompile Include="FrameEvent.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\events\FrameListener.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClCompile>
-    <ClCompile Include="Event.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\input\Mouse.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\input</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceLocator.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\opengl\GL.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\opengl</Filter>
     </ClCompile>
-    <ClCompile Include="Mouse.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\opengl\bundle\Buffer.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\opengl\bundle</Filter>
     </ClCompile>
-    <ClCompile Include="Intersects.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\opengl\bundle\Bundle.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\opengl\bundle</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\opengl\texture\SpriteSheet.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\opengl\texture</Filter>
     </ClCompile>
-    <ClCompile Include="Buffer.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\opengl\texture\Texture.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\opengl\texture</Filter>
     </ClCompile>
-    <ClCompile Include="Bundle.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\util\FoxyImage.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\util</Filter>
     </ClCompile>
-    <ClCompile Include="FoxyTime.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\util\FoxyTime.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\util\Intersects.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\util\lodepng.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\net\foxycorndog\cfoxylib\util\ResourceLocator.cpp">
+      <Filter>Source Files\net\foxycorndog\cfoxylib\util</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Frame.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\components\Component.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\components</Filter>
     </ClInclude>
-    <ClInclude Include="Component.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\components\Panel.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\components</Filter>
     </ClInclude>
-    <ClInclude Include="Panel.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\CFL.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib</Filter>
     </ClInclude>
-    <ClInclude Include="CFL.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\Color.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib</Filter>
     </ClInclude>
-    <ClInclude Include="Color.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\Frame.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib</Filter>
     </ClInclude>
-    <ClInclude Include="FrameListener.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\events\Event.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClInclude>
-    <ClInclude Include="FrameEvent.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\events\FrameEvent.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\events\FrameListener.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClInclude>
-    <ClInclude Include="ResourceLocator.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\events\MouseEvent.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClInclude>
-    <ClInclude Include="MouseListener.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\events\MouseListener.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\events</Filter>
     </ClInclude>
-    <ClInclude Include="MouseEvent.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\input\Mouse.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\input</Filter>
     </ClInclude>
-    <ClInclude Include="Mouse.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\opengl\GL.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\opengl</Filter>
     </ClInclude>
-    <ClInclude Include="Intersects.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\opengl\bundle\Buffer.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\opengl\bundle</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\opengl\bundle\Bundle.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\opengl\bundle</Filter>
     </ClInclude>
-    <ClInclude Include="Buffer.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\opengl\texture\SpriteSheet.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\opengl\texture</Filter>
     </ClInclude>
-    <ClInclude Include="GL.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\opengl\texture\Texture.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\opengl\texture</Filter>
     </ClInclude>
-    <ClInclude Include="Bundle.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\util\FoxyImage.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\util</Filter>
     </ClInclude>
-    <ClInclude Include="FoxyTime.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\util\FoxyTime.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\util\Intersects.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\util\lodepng.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\net\foxycorndog\cfoxylib\util\ResourceLocator.h">
+      <Filter>Header Files\net\foxycorndog\cfoxylib\util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
