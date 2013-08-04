@@ -18,7 +18,8 @@ SpriteSheet::SpriteSheet(string location, int cols, int rows) : Texture(location
 }
 
 /**
- * Free any of the dangling memory created by the SpriteSheet class.
+ * Free any of the dangling memory created by the SpriteSheet class
+ * instance.
  */
 SpriteSheet::~SpriteSheet()
 {

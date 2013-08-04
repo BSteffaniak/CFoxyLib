@@ -1,47 +1,56 @@
-﻿Build started 7/27/2013 9:10:31 PM.
+﻿Build started 7/29/2013 11:16:50 AM.
      1>Project "C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\CFoxyLib\CFoxyLib.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Braden Steffaniak\glew-1.10.0\include" /I"C:\Users\Braden Steffaniak\SDL2-2.0.0\include" /I"C:\Users\Braden Steffaniak\Documents\Github\CFoxyUtil\CFoxyUtil" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\net\foxycorndog\cfoxylib\Color.cpp src\net\foxycorndog\cfoxylib\Frame.cpp src\net\foxycorndog\cfoxylib\components\Component.cpp src\net\foxycorndog\cfoxylib\components\Panel.cpp src\net\foxycorndog\cfoxylib\events\Event.cpp src\net\foxycorndog\cfoxylib\events\FrameEvent.cpp src\net\foxycorndog\cfoxylib\events\FrameListener.cpp src\net\foxycorndog\cfoxylib\input\Mouse.cpp src\net\foxycorndog\cfoxylib\opengl\GL.cpp src\net\foxycorndog\cfoxylib\opengl\bundle\Buffer.cpp src\net\foxycorndog\cfoxylib\opengl\bundle\Bundle.cpp src\net\foxycorndog\cfoxylib\opengl\texture\SpriteSheet.cpp src\net\foxycorndog\cfoxylib\opengl\texture\Texture.cpp src\net\foxycorndog\cfoxylib\util\FoxyImage.cpp src\net\foxycorndog\cfoxylib\util\FoxyTime.cpp src\net\foxycorndog\cfoxylib\util\Intersects.cpp src\net\foxycorndog\cfoxylib\util\lodepng.cpp
-         lodepng.cpp
-         Intersects.cpp
-         FoxyTime.cpp
-         FoxyImage.cpp
-         Texture.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"C:\Users\Braden Steffaniak\glew-1.10.0\include" /I"C:\Users\Braden Steffaniak\SDL2-2.0.0\include" /I"C:\Users\Braden Steffaniak\Documents\Github\CFoxyUtil\CFoxyUtil" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt src\Bounds.cpp src\Bounds2f.cpp src\Buffer.cpp src\Bundle.cpp src\Color.cpp src\Component.cpp src\Event.cpp src\Font.cpp src\FontText.cpp src\FoxyImage.cpp src\FoxyTime.cpp src\Frame.cpp src\FrameEvent.cpp src\FrameListener.cpp src\GL.cpp src\Intersects.cpp src\Mouse.cpp src\Panel.cpp src\SpriteSheet.cpp src\Texture.cpp
          SpriteSheet.cpp
-         Bundle.cpp
-         Buffer.cpp
-         GL.cpp
+         FontText.cpp
+         Font.cpp
+         Generating Code...
+         Compiling...
+         Texture.cpp
+         Panel.cpp
          Mouse.cpp
+         Intersects.cpp
+         GL.cpp
          FrameListener.cpp
          FrameEvent.cpp
-         Event.cpp
-         Panel.cpp
-         Component.cpp
          Frame.cpp
+         FoxyTime.cpp
+         FoxyImage.cpp
+         Event.cpp
+         Component.cpp
          Color.cpp
+         Bundle.cpp
+         Buffer.cpp
+         Bounds2f.cpp
+         Bounds.cpp
          Generating Code...
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\Debug\CFoxyLib.lib" SDL2main.lib GLew32.lib /LIBPATH:"C:\Users\Braden Steffaniak\SDL2-2.0.0\lib\x86" /LIBPATH:"C:\Users\Braden Steffaniak\glew-1.10.0\lib\Release\Win32" /NOLOGO Debug\Color.obj
-         Debug\Component.obj
-         Debug\Panel.obj
-         Debug\Event.obj
-         Debug\FrameEvent.obj
-         Debug\FrameListener.obj
-         Debug\Frame.obj
-         Debug\Mouse.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\Debug\CFoxyLib.lib" SDL2main.lib GLew32.lib /LIBPATH:"C:\Users\Braden Steffaniak\SDL2-2.0.0\lib\x86" /LIBPATH:"C:\Users\Braden Steffaniak\glew-1.10.0\lib\Release\Win32" /NOLOGO Debug\Bounds.obj
+         Debug\Bounds2f.obj
          Debug\Buffer.obj
          Debug\Bundle.obj
-         Debug\GL.obj
-         Debug\SpriteSheet.obj
-         Debug\Texture.obj
+         Debug\Color.obj
+         Debug\Component.obj
+         Debug\Event.obj
+         Debug\Font.obj
+         Debug\FontText.obj
          Debug\FoxyImage.obj
          Debug\FoxyTime.obj
+         Debug\Frame.obj
+         Debug\FrameEvent.obj
+         Debug\FrameListener.obj
+         Debug\GL.obj
          Debug\Intersects.obj
          Debug\lodepng.obj
+         Debug\Mouse.obj
+         Debug\Panel.obj
          Debug\ResourceLocator.obj
+         Debug\SpriteSheet.obj
+         Debug\Texture.obj
          CFoxyLib.vcxproj -> C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\Debug\CFoxyLib.lib
      1>Done Building Project "C:\Users\Braden Steffaniak\Documents\GitHub\CFoxyLib\CFoxyLib\CFoxyLib.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:10.66
+Time Elapsed 00:00:14.00
